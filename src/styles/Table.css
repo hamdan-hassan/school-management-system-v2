@@ -1,0 +1,246 @@
+.history-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background-color: #f5f5f5;
+}
+
+.history-page {
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+}
+
+.history-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.history-table-container {
+  max-width: 100%;
+  max-height: 300px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: auto;
+}
+
+.history-memorandum-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.history-memorandum-table th,
+.history-memorandum-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.history-memorandum-table th {
+  background-color: #f2f2f2;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.delete-button {
+  background-color: #ff0000;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+.history-actions-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.history-actions-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  height: 80%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: scroll;
+}
+
+.history-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.history-actions-modal-content h2 {
+  text-align: center;
+}
+
+.history-form-group {
+  margin-bottom: 15px;
+}
+
+.history-actions-modal-content label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+.history-actions-modal-content input {
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.history-actions-modal-content button {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history-actions-modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.history-actions-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reject-action-button {
+  background-color: #ff5454;
+}
+
+.complete-action-button {
+  background-color: green;
+}
+
+.required-label {
+  color: red; /* Text color for the label */
+  font-size: 0.875rem; /* Font size */
+  margin-top: 4px; /* Add some spacing between the input and label */
+}
+
+.success-message {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.delete-success-message {
+  background-color: #ca6250; /* Green background color */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+.items-per-page-dropdown {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.items-per-page-dropdown label {
+  margin-right: 10px;
+}
+
+.items-per-page-dropdown select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.sort-options label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.toggle-button {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.toggle-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-button button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .history-page {
+    padding: 10px;
+  }
+
+  .history-memorandum-table {
+    font-size: 14px;
+  }
+
+  .history-actions-modal-content {
+    width: 90%;
+  }
+}

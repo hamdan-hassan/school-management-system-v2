@@ -1,0 +1,19 @@
+/* printStyles.css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .modal-content,
+  .modal-content * {
+    visibility: visible;
+  }
+  .modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .print-button {
+    display: none !important; /* Hide the print button during printing */
+  }
+}

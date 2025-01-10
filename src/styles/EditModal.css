@@ -1,0 +1,79 @@
+/* EditModal.css */
+
+.edit-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.edit-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.edit-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.edit-modal-header h2 {
+  margin: 0;
+}
+
+.edit-modal-close {
+  cursor: pointer;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.edit-modal-body {
+  margin-bottom: 20px;
+}
+
+.edit-modal-body label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edit-modal-body input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-modal-footer button {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.edit-modal-footer button:last-child {
+  background-color: #e74c3c;
+}
+
+/* Add any additional styles or modifications based on your design requirements */

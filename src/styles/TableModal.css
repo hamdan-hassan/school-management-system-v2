@@ -1,0 +1,55 @@
+/* TableModal.css */
+
+.modal {
+  z-index: 100;
+  display: block;
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  max-width: 700px;
+}
+
+.table-modal-close {
+  color: #aaaaaa;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.table-modal-close:hover,
+.table-modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.marks-table th,
+.marks-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.marks-table th {
+  background-color: #f2f2f2;
+}
